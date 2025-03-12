@@ -22,7 +22,7 @@ class HotelService {
 
     //Get all hotels using raw SQL
     async get() {
-        const hotels = await sequelize.query('SELECT * FROM Hotels', {
+        const hotels = await sequelize.query('SELECT * FROM hotels', {
             type: QueryTypes.SELECT,
         });
         return hotels;
